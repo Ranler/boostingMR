@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>BoostingMR</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+	<div id="hleft">
+	  <h1>BoostingMR</h1>
+	  <p>Scalable and Parallel Boosting with MapReduce</p>
+	</div>
+	<div id="hright">
+	  <a href="{{url_for('frontend.index')}}" class="navb">Home</a>
+	  <a href="{{url_for('datasets.index')}}" class="navb">DataSets</a>
+	  <a href="{{url_for('training.index')}}" class="navb">Training</a>
+	  <a href="{{url_for('testing.index')}}" class="navb">Testing</a>
+	</div> 
+      </div>
+      <hr />
+
+
+      <div id="main">
+  	{% block content %}{% endblock %}
+      </div>
+
+      <div id="footer">	
+	<hr />
+	<div class="left">
+	  <a href="https://github.com/Ranler/boostingPL">BoostingMR</a>, 2012
+	</div>
+      </div>	
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,41 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+{% include "_sleft.html" %}
+
+<div id="smain">
+  <h2>Step 2: Model Choose</h2>
+  <form method="" id="" action="">
+    <table>
+      <tbody>
+	<tr>
+	  <td class="tleft">Boosting Model:</td>
+	  <td class="tright">
+	    <select name="" id="">  
+              <option value="1">AdaBoostPL</option>  
+              <option value="2">LogitBoostPL</option>  
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Parallel Number:</td>
+	  <td><input type="text" name="" value="" /></td>
+	</tr>
+	<tr>
+	  <td>Iteration Number:</td>
+	  <td><input type="text" name="" value="" /></td>
+	</tr>
+	<tr>
+	  <td>Weak Classifier:</td>
+	  <td>
+	    <select name="" id="">  
+              <option value="1">DecisionStump</option>  
+	    </select>  	    
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <input type="submit" value="next"></input>
+  </form>
+</div>
+{% endblock %}

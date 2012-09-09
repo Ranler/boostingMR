@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#footer {clear:both; text-align:center;}
+
+.navb {border: 1px solid #528641; text-decoration: none; padding: 5px 10px;}
+
+/*--------- header ------------*/
+#header {height:120px;}
+#hleft {float:left; overflow:hidden;}
+#hright {float:right; margin-top:80px; margin-right:80px;}
+
+#sleft {float:left; overflow:hidden;}
+#smain {margin-left: 300px; padding-left: 50px; border-left: 1px solid #DDD;}
+#smain table {border-width: 1px; border-style: solid; border-collapse: collapse; width: 90%;}
+#smain .tleft {width: 20%;}
+#smain .tright {}
+#smain table td, th {border-style: solid; border-width: 1px; text-align: left;}
+
+/*--------- dataset ------------*/
+#dmain {margin: 10px; padding: 10px;}
+.dbox {margin-bottom: 0px; padding: 0px 30px 30px 30px; border-bottom: 1px solid #CCC;}
+#dmain table {border-width: 1px; border-style: solid; border-collapse: collapse; width: 100%;}
+#dmain table td, th {border-style: solid; border-width: 1px; text-align: left;}

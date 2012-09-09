@@ -1,0 +1,34 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+
+<div id="">
+  <h3>What is BoostingPL?</h3>
+
+  <p>BoostingPL is a scalable and parallel machine learning tools for Boosting
+  (What is Boosting? http://en.wikipedia.org/wiki/Boosting).</p>
+
+  </p>This Project is based on this paper:</p>
+ 
+      </p>Indranil Palit and Chandan K. Reddy, "Scalable and Parallel Boosting
+      with MapReduce", IEEE Transactions on Knowledge and Data Engineering
+      (TKDE), 2012.</p>
+   
+  <p>If you want to know the theory and demonstration of algorithms in BoostingPL
+  , this paper provides references for further reading.</p>
+
+  <p>The MapReduce platform we used is Apache Hadoop(http://hadoop.apache.org/)
+  , which is an opensource project and is more popular than other 
+  implementations of MapReduce. You can deploy it on Amazon EC2 or your own 
+  cluster.</p>
+
+  <p>The cgl-mapreduce version for BoostingPL is also vailable from the TKDE paper 
+  authors, you can download "CGL-MapReduce-BoostingPL.zip" in "extra/" directory.
+  This cgl-mapreduce version depends on these libraries: Weka, twister-0.8, 
+  NaradaBrokering-4.2.2. You can download these from source websites.<p>
+
+
+</div>
+
+{% endblock %}
+
