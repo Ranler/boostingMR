@@ -32,54 +32,9 @@
     </table>
   </div>
 
-  <div class="dbox">
-    <h2>Upload new dataset</h2>
-    <form method="post" id="" action="{{url_for('frontend.dataset_next')}}">
-      <tr>
-	Dataset format: 
-	<select name="" id="">  
-          <option value="1">ARFF</option>  
-          <option value="2">CSV</option>  
-          <option value="3">LightSVM</option>  
-          <option value="4">other</option>  
-	</select>
-      </tr>
+  {% include "datasets/_upload.html"%}
 
-      <br />
-      <input type="file" name="file" />
-
-      <!-- ARFF -->
-      <!-- CSV -->
-      <!-- LightSVM -->
-      <!-- user define -->
-      <table>
-	<tbody>
-	  <tr>
-	    <td class="tleft">Separator:</td>
-	    <td class="tright"><input type="text" name="" value="," /></td>
-	  </tr>
-	  <tr>
-	    <td>Attributes Number:</td>
-	    <td><input type="text" name="" value="" /></td>
-	  </tr>
-	  <tr>
-	    <td>Class Index:</td>
-	    <td><input type="text" name="" value="-1" />(-1 means the last index in line)</td>
-	  </tr>
-	  <tr>
-	    <td>Classes:</td>
-	    <td><input type="text" name="" value="+1,-1" />(separate with ',', such as "+1,-1")</td>
-	  </tr>
-	</tbody>
-      </table>   
-      <input type="submit" value="upload"></input>
-    </form>
-  </div>
-
-  <div class="dbox">
-    <h2>Random new dataset</h2>
-    <button>create</button>
-  </div>
+  <a href="{{url_for('datasets.random')}}">Random</a>
 
 </div>
 

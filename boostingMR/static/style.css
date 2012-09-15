@@ -4,6 +4,7 @@
 #footer {clear:both; text-align:center;}
 
 .navb {border: 1px solid #528641; text-decoration: none; padding: 5px 10px;}
+.msg {color: red;}
 
 /*--------- header ------------*/
 #header {height:120px;}

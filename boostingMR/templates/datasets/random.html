@@ -1,0 +1,44 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+
+<div class="dbox">
+  <h2>Random new dataset</h2>
+  {% if msg %} <p><div class="msg"> {{ msg }} </div></p> {% endif %}
+
+  <form method="post" id="" action="{{url_for('datasets.random')}}">
+    <table>
+      <tbody>
+	<tr>
+	  <td class="tleft">Dataset Name:</td>
+	  <td class="tright"><input type="text" name="rdname" value="" /></td>
+	</tr>
+	<tr>
+	  <td class="tleft">Data Generator:</td>
+	  <td class="tright">
+	    <select name="rdgen" id="">  
+              <option value="1">RDG1</option>  
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Number of Attributes:</td>
+	  <td><input type="text" name="rdnAttr" value="100" /></td>
+	</tr>
+	<tr>
+	  <td>Number of Classes:</td>
+	  <td><input type="text" name="rdnClass" value="2" /></td>
+	</tr>
+	<tr>
+	  <td>Number of Instances:</td>
+	  <td><input type="text" name="rdnInst" value="10000" /></td>
+	</tr>
+      </tbody>
+    </table>     
+    
+    <br/>
+    <input type="submit" value="create"/>
+  </form>
+</div>
+
+{% endblock %}

@@ -12,7 +12,7 @@ class Attribute(db.Model) :
     extra = db.Column(db.String)
 
 
-    def __init__(self, did, name, type=0, isClass=0, extra=""):
+    def __init__(self, did, name, type=0, isClass=0, extra=''):
         self.did = did
         self.name = name
         self.type = type
