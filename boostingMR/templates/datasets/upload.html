@@ -1,3 +1,6 @@
+{% extends "_layout.html" %}
+
+{% block content %}
 <div class="dbox">
   <h2>Upload new dataset</h2>
   <form method="post" id="" action="{{url_for('frontend.dataset_next')}}">
@@ -41,3 +44,4 @@
     <input type="submit" value="upload"></input>
   </form>
 </div>
+{% endblock %}
